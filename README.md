@@ -6,7 +6,7 @@
 
 A decentralized NFT trading platform built on the **UUPS (Universal Upgradeable Proxy Standard)** pattern. This project integrates a customized stablecoin exchange, NFT minting, fixed-price marketplace trading, and an English auction system.
 
-🚀 **Live Demo**: [[Your Vercel Link Here](https://nft-market-delta-one.vercel.app/)]  
+🚀 **Live Demo**: [[Click to visit](https://nft-market-delta-one.vercel.app/)]  
 
 ---
 
@@ -54,3 +54,4 @@ This project strictly adheres to Ethereum Improvement Proposals (EIPs) implement
 ---
 
 ---
+
