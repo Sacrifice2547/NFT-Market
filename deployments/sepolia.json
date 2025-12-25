@@ -1,0 +1,32 @@
+{
+  "network": "sepolia",
+  "chainId": "11155111",
+  "deployer": "0x1213e1D4a9df1Ed1a5286E0F2C6B539F72A66a1e",
+  "timestamp": "2025-12-24T17:32:16.142Z",
+  "contracts": {
+    "chainlink": {
+      "address": "0x694AA1769357215DE4FAC081bf1f309aDC325306",
+      "type": "Chainlink ETH/USD"
+    },
+    "stablecoin": {
+      "proxy": "0xFb960bA1B31E593c43A120328cEb12E7EF8F2F6d",
+      "implementation": "0x9A2febB2AB187799CC14b00204bE00be2eF90E53"
+    },
+    "nft": {
+      "proxy": "0xA578a048f10D199564b8fEDe142D9C8204B228C2",
+      "implementation": "0x154c01828310c8aDae6F38628372F3789Cf1Cca2"
+    },
+    "marketplace": {
+      "proxy": "0xB71081DEf94bA547dB3571e5CD05Fe0027Ff08A1",
+      "implementation": "0x8D28DA3f7B5018CB17522aC318590C0FAb936a6b"
+    },
+    "auction": {
+      "proxy": "0xf955c9c16110609e9b093F494e51FB84BF56548F",
+      "implementation": "0x4bC458D0e53CE0eB43Ffe20c0C53C3EfDc253258"
+    },
+    "faucet": {
+      "proxy": "0x29736432FD3BdB8A69Ea139F8E328D1Ef91f4C76",
+      "implementation": "0xf6199dC976D82ECC74692080Ad39C4b2b4a9e806"
+    }
+  }
+}

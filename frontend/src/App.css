@@ -1,0 +1,210 @@
+/* ================= 全局重置 ================= */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  background-color: #f4f6f8; /* 浅灰背景，更有层次感 */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* 覆盖 vite 默认的 center */
+  max-width: none; /* 覆盖 vite 默认的 1280px */
+}
+
+/* ================= 布局容器 ================= */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ================= 顶部导航栏 ================= */
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  padding: 0 40px; /* 两侧留出呼吸感 */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.navbar button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  margin-right: 30px;
+  padding: 23px 0; /* 高度撑满 navbar */
+  cursor: pointer;
+  color: #64748b;
+  position: relative;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar button:hover {
+  color: #007bff;
+}
+
+.navbar button.active {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* 选中时的底部蓝条 */
+.navbar button.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #007bff;
+  border-radius: 3px 3px 0 0;
+}
+
+.address-display {
+  margin-left: auto;
+  font-family: "Consolas", monospace;
+  background: #f1f5f9;
+  padding: 6px 16px;
+  border-radius: 20px;
+  color: #334155;
+  font-size: 14px;
+  border: 1px solid #e2e8f0;
+}
+
+/* ================= 内容显示区域 ================= */
+.content-area {
+  flex: 1;
+  width: 100%;
+  /* 设置一个较大的最大宽度，防止在超宽屏上内容过于分散，
+     但比之前的 1000px 宽得多 */
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px; /* 内容区内边距 */
+  box-sizing: border-box;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+/* ================= 响应式 NFT 网格 ================= */
+.nft-grid {
+  display: grid;
+  /* 关键：自动填充，最小宽度 260px，不够换行，够了自动拉伸铺满 */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.nft-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.nft-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+.card-header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.card-body p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* ================= 交互组件通用样式 ================= */
+input {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 登录页样式 */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.connect-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.connect-btn:hover {
+  background-color: #0056b3;
+}

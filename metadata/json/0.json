@@ -1,0 +1,19 @@
+{
+  "name": "COMP5521 NFT #0",
+  "description": "The first NFT in COMP5521 collection",
+  "image": "https://picsum.photos/seed/nft0/400/400",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Color",
+      "value": "Gold"
+    },
+    {
+      "trait_type": "Level",
+      "value": 10
+    }
+  ]
+}

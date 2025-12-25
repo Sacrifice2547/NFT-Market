@@ -1,0 +1,19 @@
+{
+  "name": "COMP5521 NFT #1",
+  "description": "A rare NFT in COMP5521 collection",
+  "image": "https://picsum.photos/seed/nft1/400/400",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Color",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Level",
+      "value": 5
+    }
+  ]
+}
